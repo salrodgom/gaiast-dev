@@ -1,0 +1,9 @@
+physically_constrained
+ncomp 2
+1.0 langmuir_freundlich_dualsite 
+1.0 langmuir_freundlich_dualsite
+inter 4096
+ffit? .true.
+refit .true.
+11.0000000       1.13100773E-02  1.0  0.0  1.0   1.0
+9.90844345       5.21975122E-02  1.0  0.0  1.0   1.0
