@@ -880,7 +880,7 @@ module mod_genetic
  implicit none
  private
  public fit
- integer,parameter             :: ga_size     = 2**13 ! numero de cromosomas
+ integer,parameter             :: ga_size     = 2**10 ! numero de cromosomas
  real,parameter                :: ga_mutationrate = 0.3333 !2000/real(ga_size) ! ga_mutationrate=0.333
  real,parameter                :: ga_eliterate= 0.25, GA_DisasterRate = 0.0000001
  integer,parameter             :: maxlinelength=maxnp*32
@@ -1327,7 +1327,7 @@ module mod_genetic
     fire: if ( FlagFire ) then
      if ( ii >= minstep .and. parents(1)%fitness <= TolFire ) exit converge
     else
-     if( abs(diff - eps) <= 0.1 .and. ii >= minstep .and. &
+     if( abs(diff - eps) <= 0.5 .and. ii >= minstep .and. &
       parents(1)%fitness - fit0 == 0 ) then
       kk = kk + 1
      else

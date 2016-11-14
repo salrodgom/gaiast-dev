@@ -1,4 +1,4 @@
-LINKFLAGS_FOR = -pedantic -O3 -march=native -fbounds-check
+LINKFLAGS_FOR = -pedantic -O3 -march=native -Wall
 COMP_FOR = gfortran
 GNUPLOT_SCRIPT = png.gp
 check:
